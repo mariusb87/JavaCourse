@@ -56,6 +56,6 @@ public class Operators {
             System.out.println("conditia este adevarata");
 
         } else System.out.println("conditia nu este adevarata");
-
+        System.out.println("asdfsdg");
     }
 }
