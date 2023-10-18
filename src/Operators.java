@@ -20,8 +20,8 @@ public class Operators {
         System.out.println(number1%number2);
         System.out.println(9/2); // catul impartirii
         System.out.println(9%2); // restul impartirii
-        System.out.println(++number1); // incrementare - incrementeaza apoi afiseaza
-        System.out.println(number1++); // incrementare - afiseaza number 1 apoi incrementeaza
+        System.out.println(++number1); // incrementeaza apoi afiseaza
+        System.out.println(number1++); // afiseaza number 1 apoi incrementeaza
         System.out.println(number1);
         System.out.println(--number2); // decrementare
 

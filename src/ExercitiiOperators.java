@@ -13,7 +13,7 @@ public class ExercitiiOperators {
 
         // ex4
         int x1 = 10;
-        x1 = 5;
+        x1 += 5;
         System.out.println(x1);
 
         // ex5
@@ -27,7 +27,7 @@ public class ExercitiiOperators {
         }
 
         // ex 6
-        if ((c%2) == 0){
+        if (c%2 == 0){
             System.out.println("suma este numar par");
         }
 

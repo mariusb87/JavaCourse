@@ -11,7 +11,7 @@ public class ExercitiiOptionaleOperatori {
         System.out.println("Restul impartirii dintre var4 si var2 este: "+ (var4%var2));
 
         // ex2
-        for (int i=0; i<2;i++) {
+        for (int i=0; i<3; i++) {
             var1++;
         }
 
