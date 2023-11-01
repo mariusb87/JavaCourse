@@ -4,14 +4,14 @@ public class ExercitiiConditionalsLoops {
         // ex1: Scrieți un program care să afișeze toate
         // numerele întregi de la 0 până la 10 (inclusiv).
         System.out.println("--- Exercitiul 1 ---");
-        for (int i=0; i<=10; i+=2){
+        for (int i=0; i<=10; i++){
             System.out.print(i+" ");
         }
 
         // ex2: Scrieți un program care să afișeze numerele
         // întregi de la 20 până la 10 (inclusiv) în ordine descrescătoare.
         System.out.println("--- Exercitiul 2 ---");
-        for (int i=20; i>=10; i-=2){
+        for (int i=20; i>=10; i--){
             System.out.print(i+" ");
         }
 
@@ -39,7 +39,7 @@ public class ExercitiiConditionalsLoops {
         // 3-> Martie, etc.
         System.out.println("--- Exercitiul 5 ---");
 
-        int luna = 15;
+        int luna = 2;
 
         switch (luna){
             case 1: System.out.println("Ianuarie");break;
