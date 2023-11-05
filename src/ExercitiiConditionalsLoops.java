@@ -55,7 +55,6 @@ public class ExercitiiConditionalsLoops {
             case 11: System.out.println("Noiembrie");break;
             case 12: System.out.println("Decembrie");break;
             default: System.out.println("Lunile trebuie sa fie intre 1 si 12");
-
         }
 
     }

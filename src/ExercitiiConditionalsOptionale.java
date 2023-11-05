@@ -22,8 +22,8 @@ public class ExercitiiConditionalsOptionale {
         // pentru gen „m‟, sa afiseze “Domnul”, indiferent daca persoana e casatorita sau nu
         // pentru gen „f‟ sa afiseze “Domnisoara”, daca nu e casatorita sau “Doamna”, daca e
         //casatorita
-        char gender = 'm';
-        boolean married = false;
+        char gender = 'f';
+        boolean married = true;
         if (gender == 'm'){
             System.out.println("Domnul");
         } else if (gender == 'f' && !married) {
@@ -63,7 +63,7 @@ public class ExercitiiConditionalsOptionale {
         // Ex5: Declarati o variabila de tip char cu numele letter si dati-i o valoare la alegere.
         //Daca valoarea este consoana, afisati “[letter] este consoana”, daca este vocala, afisati “[letter]
         //este vocala”, unde letter e valoarea variabilei.
-        char letter = 'm';
+        char letter = 'u';
         if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
             System.out.println(letter + " este o vocala");
             }else {
