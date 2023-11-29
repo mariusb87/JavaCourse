@@ -14,6 +14,15 @@ public class JavaMethods {
         helloNameAge("Cristina",19);
         printFriends("Cristina","Ioana");
 
+        getSumWithReturn(5,6); // calculeaza dar nu afiseaza rezultatul
+        System.out.println(getSumWithReturn(7,8));
+
+        System.out.println(getProductWithReturn(7,8));
+
+        System.out.println(areMere("Ana"));
+        System.out.println(areMere("Marius"));
+
+        invers("Marius");
 
     }
 
@@ -55,5 +64,27 @@ public class JavaMethods {
         System.out.println(x*y);
     }
 
+    static int getSumWithReturn(int x, int y){
+        int sum = x+y;
+        return sum;
+    }
+
+    public static int getProductWithReturn(int x, int y){
+        return x*y;
+    }
+
+    private static String areMere(String nume){
+        return nume+" are mere";
+    }
+
+    // exercitiul 8
+
+    static void invers (String cuvant){
+        for (int i=cuvant.length()-1; i>=0; i--){
+            System.out.print(cuvant.charAt(i));
+        }
+    }
+
+    
 
 }

@@ -10,5 +10,13 @@ public class HelloWorld {
         System.out.println(nume);
         System.out.println(x+" "+nume);
 
+        boolean suntemCuminti = true;
+        boolean vineMosul;
+        if (!suntemCuminti){
+            vineMosul = false;
+        }else vineMosul = true;
+        System.out.print(vineMosul);
+
+
     }
 }

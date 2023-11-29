@@ -17,7 +17,7 @@ public class ExercitiiAlgoritmi {
 
         //Ex 4: Declarați un șir de țări cu 8 elemente (ex. Anglia, România,
         // Albania, Franța, Elveția, China, SUA, Australia)
-        String tari[]={"Anglia", "Romania","Albania","Franta","Elvetia","China","SUA","Australia"};
+        String tari[]={"Anglia", "Romania","Albania","Franta","Elvetia","China","SUA","Australia, Afganistan"};
 
         //Ex5: Scrieți un program care să afișeze inițiala fiecărei țări
         for (String tara : tari){
@@ -27,7 +27,8 @@ public class ExercitiiAlgoritmi {
 
         //Ex6: Scrieți un program care să afișeze numai țările care încep cu litera “A”
         for (String tara : tari){
-            if (tara.charAt(0) == 'A'){
+            //if (tara.charAt(0) == 'A'){
+            if (tara.indexOf("A")==0){
                 System.out.println(tara);
             }
         }
@@ -51,10 +52,10 @@ public class ExercitiiAlgoritmi {
         System.out.println("Tara cu cel mai lung nume este: "+ taraMaxLength);
 
         // Ex8: Scrieți un program care să afișeze țara cu cel mai scurt nume
-        int minLength = 0;
-        String taraMinLength = "A";
+        int minLength = tari[0].length();
+        String taraMinLength = tari[0];
         for (int i=0; i< tari.length; i++){
-            if (tari[i].length() < maxLength) {
+            if (tari[i].length() < minLength) {
                 minLength = tari[i].length();
                 taraMinLength = tari[i];
             } else if (tari[i].length() == minLength) {
@@ -63,10 +64,25 @@ public class ExercitiiAlgoritmi {
         }
         System.out.println("Tara cu cel mai scurt nume este: "+ taraMinLength);
 
-
+        int sirnumere[]={4,7,-5,89};
+        int max = sirnumere[0];
+        int min = sirnumere[0];
+        for (int i=0; i< sirnumere.length; i++){
+            if (sirnumere[i]>max){
+                max = sirnumere[i];
+            }
+        }
+        for (int c : sirnumere){
+            if (c < min){
+                min = c;
+            }
+        }
+        System.out.println("Numarul maxim: "+max);
+        System.out.println("Numarul minim: "+min);
 
 
     }
+
 
 
 }
