@@ -8,6 +8,9 @@ public class ExercitiiMetode {
         System.out.println("Ex6:");
         invers("Vacanta");
 
+        System.out.println(metodaEx6("Vacanta"));
+
+
     }
 
     // Ex1: Scrieti o metoda care primeste un numar intreg si returneaza
@@ -48,6 +51,18 @@ public class ExercitiiMetode {
         for (int i=cuvant.length()-1; i>=0; i--){
             System.out.print(cuvant.charAt(i));
         }
+    }
+
+    // Ex6 varianta 2
+
+    private static String metodaEx6(String cuvant){
+        String cuvantInversat = "";
+        int lungime = cuvant.length();
+
+        for (int i=lungime-1; i>=0; i--){
+            cuvantInversat = cuvantInversat + cuvant.charAt(i);
+        }
+        return  cuvantInversat;
     }
 
 }

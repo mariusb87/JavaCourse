@@ -8,6 +8,7 @@ public class ExercitiiMetodeOptionale {
         anotimp("august");
         anotimp("octombrie");
         anotimp("ianuarie");
+        anotimp("asfg");
 
         System.out.println(maxim(2,6));
         System.out.println(maxim(4,1));
@@ -24,6 +25,15 @@ public class ExercitiiMetodeOptionale {
 
         System.out.println(sumaCifre(256));
         System.out.println(sumaCifre(123456789));
+
+
+        System.out.println(metodaEx5Optionale(-5,6,8,7));
+
+        System.out.println(metodaEx6Optionale("castel"));
+        System.out.println(metodaEx6Optionale("casa"));
+
+        System.out.println(sumaCifre(873));
+
 
 
 
@@ -100,6 +110,23 @@ public class ExercitiiMetodeOptionale {
         return nrmaxim;
     }
 
+    //ex 5, Varianta 2
+
+    private static int metodaEx5Optionale(int a, int b, int c, int d){
+        int max= a;
+        if (b>max){
+            max=b;
+        }
+        if (c>max){
+            max=c;
+        }
+        if (d>max){
+            max=d;
+        }
+    return max;
+
+    }
+
     //Exercitiul 6:
     //Scrieti o metoda care primeste un cuvant si returneaza caracterul/caracterele din mijloc.
     //Daca are numar impar de litere, returnati litera din mijloc (casca -> s).
@@ -114,6 +141,23 @@ public class ExercitiiMetodeOptionale {
             System.out.println(cuvant.charAt((int)cuvant.length()/2));
         }
 
+    }
+
+    //Ex6 varianta 2;
+
+    private static String metodaEx6Optionale(String cuvant) {
+        String LitereleDinMijloc = "";
+        int lungimeaCuvantului = cuvant.length();
+        if (cuvant.length()%2 ==0){
+            int pozitieLitera1= lungimeaCuvantului/2-1;
+            int pozitieLitera2= lungimeaCuvantului/2;
+            LitereleDinMijloc = LitereleDinMijloc + cuvant.charAt(pozitieLitera1) + cuvant.charAt(pozitieLitera2);
+        }else {
+            LitereleDinMijloc = LitereleDinMijloc +cuvant.charAt(lungimeaCuvantului/2);
+        }
+
+
+    return LitereleDinMijloc;
     }
 
     //Exercitiul 7:
@@ -136,5 +180,4 @@ public class ExercitiiMetodeOptionale {
         }
         return suma;
     }
-
 }
